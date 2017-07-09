@@ -1,8 +1,8 @@
 {
-  "name": "simple_react_start_kit_2017",
+  "name": "reactstrap_example",
   "description": "react webpack2 react-router example",
   "version": "0.0.1",
-  "author": "Your name here",
+  "author": "ReactMaker",
   "dependencies": {
     "autoprefixer": "^6.7.6",
     "babel-core": "^6.7.6",
