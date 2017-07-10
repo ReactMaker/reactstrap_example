@@ -1,51 +1,118 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, InputGroup, InputGroupButton, Input, Button, Table } from 'reactstrap';
-
-const todos = ['健身房', '買菜', '與家人出遊'];
+import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText } from 'reactstrap';
 
 export default class Content extends Component {
   render() {
     return (
-      <Container>
-        <Row>
-          <Col sm="12" md={{ size: 4, offset: 4 }}>
-            <InputGroup>
-              <Input placeholder="Todo..." />
-              <InputGroupButton><Button color="secondary">Add</Button></InputGroupButton>
-            </InputGroup>
-          </Col>
-        </Row>
-        <Row>
-          <Col sm="12" md="12">
-            <Table bordered hover>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Todo</th>
-                  <th />
-                </tr>
-              </thead>
-              <tbody>
-                {
-                  todos.map((todo, index) => (
-                    <tr>
-                      <th scope="row">
-                        {index + 1}
-                      </th>
-                      <td>
-                        {todo}
-                      </td>
-                      <td>
-                        <Button color="danger">X</Button>
-                      </td>
-                    </tr>
-                  ))
-                }
-              </tbody>
-            </Table>
-          </Col>
-        </Row>
-      </Container>
+      <div>
+        <Container>
+          <Row>
+            <Col sm={12} md={12}>
+              <Jumbotron>
+                <h1 className="display-3">Hello, world!</h1>
+                <p className="lead">
+                  This is a simple hero unit, a simple Jumbotron-style component for
+                  calling extra attention to featured content or information.
+                </p>
+                <hr className="my-2" />
+                <p>
+                  It uses utility classes for typgraphy and spacing to
+                  space content out within the larger container.
+                </p>
+                <p className="lead">
+                  <Button color="primary">Learn More</Button>
+                </p>
+              </Jumbotron>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={6} md={4}>
+              <Card>
+                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <CardBlock>
+                  <CardTitle>Card title</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title
+                  and make up the bulk of the card`s content.
+                </CardText>
+                  <Button>Button</Button>
+                </CardBlock>
+              </Card>
+            </Col>
+            <Col sm={6} md={4}>
+              <Card>
+                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <CardBlock>
+                  <CardTitle>Card title</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title
+                  and make up the bulk of the card`s content.
+                </CardText>
+                  <Button>Button</Button>
+                </CardBlock>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card>
+                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <CardBlock>
+                  <CardTitle>Card title</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title
+                  and make up the bulk of the card`s content.
+                </CardText>
+                  <Button>Button</Button>
+                </CardBlock>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card>
+                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <CardBlock>
+                  <CardTitle>Card title</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title
+                  and make up the bulk of the card`s content.
+                </CardText>
+                  <Button>Button</Button>
+                </CardBlock>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card>
+                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <CardBlock>
+                  <CardTitle>Card title</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title
+                  and make up the bulk of the card`s content.
+                </CardText>
+                  <Button>Button</Button>
+                </CardBlock>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card>
+                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <CardBlock>
+                  <CardTitle>Card title</CardTitle>
+                  <CardSubtitle>Card subtitle</CardSubtitle>
+                  <CardText>
+                    Some quick example text to build on the card title
+                  and make up the bulk of the card`s content.
+                </CardText>
+                  <Button>Button</Button>
+                </CardBlock>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     );
   }
 }
