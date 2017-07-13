@@ -2,7 +2,7 @@
 
 使用ReactStrap版型
 
-![Imgur](https://i.imgur.com/2a3tdYg.png)
+![Imgur](https://i.imgur.com/Kon1Xbx.png)
 
 ## [DEMO](https://reactmaker.github.io/reactstrap_example/#/)
 
