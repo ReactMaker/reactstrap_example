@@ -114,7 +114,7 @@ export default class Content extends Component {
           <Row>
             {
               cards.map(card =>
-                <Col sm={6} md={4}>
+                <Col sm={6} md={4} className="mb-3">
                   <Card>
                     <CardImg width={'100%'} src={card.img} />
                     <CardBlock>
